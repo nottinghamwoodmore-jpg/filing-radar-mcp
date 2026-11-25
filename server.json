@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.nottinghamwoodmore-jpg/filing-radar",
+  "title": "Filing Radar",
+  "description": "Live SEC filings for AI agents: insider trades, 8-Ks, 5% stakes, IPOs, verified summaries.",
+  "repository": {
+    "url": "https://github.com/nottinghamwoodmore-jpg/filing-radar-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "websiteUrl": "https://thefilingradar.com/developers#mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://thefilingradar.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Your Filing Radar API key as a Bearer token, e.g. 'Bearer fr_live_...'. Free 14-day trial key at https://thefilingradar.com/developers",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://thefilingradar.com/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ]
+}
